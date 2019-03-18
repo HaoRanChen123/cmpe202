@@ -8,6 +8,8 @@ public class Client {
       Display display=new Display(title,out );
       display.displaytitle(title.getTitle());
       display.combine();
+      DisplaySlip d=new DisplaySlip();
+
     }
 
 }
