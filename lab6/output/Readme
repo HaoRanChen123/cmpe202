@@ -1,0 +1,4 @@
+in this lab , I used chain of responsibility to instance the example, I take making humber as a chain of making something, and five gus will taker their responsibility to 
+achieve the goal, and why I choose chain of responsibility is , that they can do their job respectively, and without any interruption.
+So I create three handler calss to achieve the job , and I submit the request and , if they are ready , they can finish it, if not , the 
+work chain will continue.
