@@ -1,0 +1,12 @@
+# cmpe202
+Actually maybe I didn’t consider too much about design pattern this time ,Since the after I read the starbucks code ;
+I just fallow the steps, so I use observer pattern to monitor keypad and I also use chain of responsibility to deal with input stuff;
+I create two classes cardinput and cardcode to the responsible chain, and I also connect keypad to the chain;
+at the same time card input and cardcode also monitor the keypad, besides I create a card class, and make it a singleton;
+since there is only one card available,(nobody cars about the formal card,if they are going to use a new one).
+and for mycardspay and my cards, I added card to them as a sub-components, every time when user click mycards screen, or mycardspay screen, that card is going to react,
+either show the id information of themselves or the money. And for mycardsoption and mycardsmoreoption, I create a text class which play a same role just like cards, 
+it can show the messages and response the touch event, finally for the addcardpage, I create a cardinput class and cardcode class.
+ I continue to choose chain of responsibility which starbucks uses. Each of them can both receive the keypad information and touch response;
+  but only the match information will show on their area., so in order to implement these function, keypad implement IKeypadsubject interface;
+	and cardinput and cardcode both implement Ikeypadobserver and Itouchhandler and IDisplaycomponents to realize observer pattern and chain of responsibility pattern.
