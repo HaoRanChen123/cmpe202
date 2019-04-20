@@ -24,6 +24,7 @@ public class PizzaDecorator_lambda {
             @Override
             public String bakePizza() {
                 return pizza.bakePizza();
+
             }
         }
         class ChickenPizza extends PizzaDecorator{
